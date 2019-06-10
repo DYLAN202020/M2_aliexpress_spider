@@ -35,6 +35,11 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.LABLE2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.gbxProperty = new System.Windows.Forms.GroupBox();
+            this.panelProperty = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnDownDescHtml = new System.Windows.Forms.Button();
             this.tbxCurrCode = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.tbxSkuCount = new System.Windows.Forms.TextBox();
@@ -52,11 +57,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tbxTitle = new System.Windows.Forms.TextBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.btnDownDescHtml = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.gbxProperty = new System.Windows.Forms.GroupBox();
-            this.panelProperty = new System.Windows.Forms.Panel();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.gbxProperty.SuspendLayout();
@@ -139,6 +139,53 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "执行结果";
+            // 
+            // listView1
+            // 
+            this.listView1.Location = new System.Drawing.Point(20, 420);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(779, 104);
+            this.listView1.TabIndex = 24;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // gbxProperty
+            // 
+            this.gbxProperty.Controls.Add(this.panelProperty);
+            this.gbxProperty.Location = new System.Drawing.Point(20, 170);
+            this.gbxProperty.Name = "gbxProperty";
+            this.gbxProperty.Size = new System.Drawing.Size(782, 217);
+            this.gbxProperty.TabIndex = 23;
+            this.gbxProperty.TabStop = false;
+            this.gbxProperty.Text = "商品属性";
+            // 
+            // panelProperty
+            // 
+            this.panelProperty.AutoScroll = true;
+            this.panelProperty.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelProperty.Location = new System.Drawing.Point(3, 17);
+            this.panelProperty.Name = "panelProperty";
+            this.panelProperty.Size = new System.Drawing.Size(776, 197);
+            this.panelProperty.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(194, 390);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "生成Excel";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // btnDownDescHtml
+            // 
+            this.btnDownDescHtml.Location = new System.Drawing.Point(330, 141);
+            this.btnDownDescHtml.Name = "btnDownDescHtml";
+            this.btnDownDescHtml.Size = new System.Drawing.Size(165, 23);
+            this.btnDownDescHtml.TabIndex = 19;
+            this.btnDownDescHtml.Text = "下载商品详情 Html 代码";
+            this.btnDownDescHtml.UseVisualStyleBackColor = true;
+            this.btnDownDescHtml.Click += new System.EventHandler(this.btnDownDescHtml_Click);
             // 
             // tbxCurrCode
             // 
@@ -272,53 +319,6 @@
             this.tbxTitle.Name = "tbxTitle";
             this.tbxTitle.Size = new System.Drawing.Size(710, 21);
             this.tbxTitle.TabIndex = 3;
-            // 
-            // btnDownDescHtml
-            // 
-            this.btnDownDescHtml.Location = new System.Drawing.Point(330, 141);
-            this.btnDownDescHtml.Name = "btnDownDescHtml";
-            this.btnDownDescHtml.Size = new System.Drawing.Size(165, 23);
-            this.btnDownDescHtml.TabIndex = 19;
-            this.btnDownDescHtml.Text = "下载商品详情 Html 代码";
-            this.btnDownDescHtml.UseVisualStyleBackColor = true;
-            this.btnDownDescHtml.Click += new System.EventHandler(this.btnDownDescHtml_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(194, 390);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "生成Excel";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // gbxProperty
-            // 
-            this.gbxProperty.Controls.Add(this.panelProperty);
-            this.gbxProperty.Location = new System.Drawing.Point(20, 170);
-            this.gbxProperty.Name = "gbxProperty";
-            this.gbxProperty.Size = new System.Drawing.Size(782, 217);
-            this.gbxProperty.TabIndex = 23;
-            this.gbxProperty.TabStop = false;
-            this.gbxProperty.Text = "商品属性";
-            // 
-            // panelProperty
-            // 
-            this.panelProperty.AutoScroll = true;
-            this.panelProperty.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelProperty.Location = new System.Drawing.Point(3, 17);
-            this.panelProperty.Name = "panelProperty";
-            this.panelProperty.Size = new System.Drawing.Size(776, 197);
-            this.panelProperty.TabIndex = 0;
-            // 
-            // listView1
-            // 
-            this.listView1.Location = new System.Drawing.Point(20, 420);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(779, 104);
-            this.listView1.TabIndex = 24;
-            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // Form1
             // 
