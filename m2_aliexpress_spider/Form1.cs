@@ -23,7 +23,7 @@ namespace m2_aliexpress_spider
         private void Form1_Load(object sender, EventArgs e)
         {
             string strDesktopPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
-            folderBrowserDialog1.SelectedPath = strDesktopPath;//默认路径
+            folderBrowserDialog1.SelectedPath = strDesktopPath;
             tbxSavePath.Text = folderBrowserDialog1.SelectedPath;
 
             groupBox2.Enabled = false;
@@ -35,7 +35,7 @@ namespace m2_aliexpress_spider
         {
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
             {
-                tbxSavePath.Text = folderBrowserDialog1.SelectedPath;
+                tbxSavePath.Text = folderBrowserDialog1.SelectedPath; 
             }
         }
 
@@ -52,7 +52,7 @@ namespace m2_aliexpress_spider
 
             if (check != "1")
             {
-                MessageBox.Show("版本已过期，请加群获取最新版本程序！", "提示");
+                MessageBox.Show("版本已过期，请加群获取最新版本程序", "提示");
                 return;
             }
 
