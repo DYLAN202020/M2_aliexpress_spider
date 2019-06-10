@@ -1,0 +1,16 @@
+C:\Users\Administrator\source\repos\m2_aliexpress_spider\m2_aliexpress_spider\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Administrator\source\repos\m2_aliexpress_spider\m2_aliexpress_spider\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Administrator\source\repos\m2_aliexpress_spider\m2_aliexpress_spider\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Administrator\source\repos\m2_aliexpress_spider\m2_aliexpress_spider\obj\Debug\m2_aliexpress_spider.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\m2_aliexpress_spider\m2_aliexpress_spider\obj\Debug\m2_aliexpress_spider.Form1.resources
+C:\Users\Administrator\source\repos\m2_aliexpress_spider\m2_aliexpress_spider\obj\Debug\m2_aliexpress_spider.Properties.Resources.resources
+C:\Users\Administrator\source\repos\m2_aliexpress_spider\m2_aliexpress_spider\obj\Debug\m2_aliexpress_spider.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\m2_aliexpress_spider\m2_aliexpress_spider\obj\Debug\m2_aliexpress_spider.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\m2_aliexpress_spider\m2_aliexpress_spider\obj\Debug\m2_aliexpress_spider.csproj.CopyComplete
+C:\Users\Administrator\source\repos\m2_aliexpress_spider\m2_aliexpress_spider\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\source\repos\m2_aliexpress_spider\m2_aliexpress_spider\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\source\repos\m2_aliexpress_spider\m2_aliexpress_spider\bin\Debug\[M2社区] 速卖通抓取v1.0.exe.config
+C:\Users\Administrator\source\repos\m2_aliexpress_spider\m2_aliexpress_spider\bin\Debug\[M2社区] 速卖通抓取v1.0.exe
+C:\Users\Administrator\source\repos\m2_aliexpress_spider\m2_aliexpress_spider\bin\Debug\[M2社区] 速卖通抓取v1.0.pdb
+C:\Users\Administrator\source\repos\m2_aliexpress_spider\m2_aliexpress_spider\obj\Debug\[M2社区] 速卖通抓取v1.0.exe
+C:\Users\Administrator\source\repos\m2_aliexpress_spider\m2_aliexpress_spider\obj\Debug\[M2社区] 速卖通抓取v1.0.pdb
