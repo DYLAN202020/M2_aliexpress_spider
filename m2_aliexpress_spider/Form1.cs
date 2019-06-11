@@ -77,6 +77,7 @@ namespace m2_aliexpress_spider
             tbxCurrCode.Text = spider.CurrencyCode;
             tbxMainImageCount.Text = spider.MainImageList.Count.ToString();
             tbxContentImageCount.Text = spider.ContentImageList.Count.ToString();
+            tbxBtImageCount.Text = spider.BiantiImageList.Count.ToString();
             tbxSkuCount.Text = spider.ProductSkuItemList.Count.ToString();
 
             CreateProperty();
@@ -275,6 +276,28 @@ namespace m2_aliexpress_spider
         private void btnClearUrl_Click(object sender, EventArgs e)
         {
             tbxUrl.Text = "";
+        }
+
+        private void btnDownloadBTImg_Click(object sender, EventArgs e)
+        {
+            string path = tbxSavePath.Text + @"\" + tbxTitle.Text;
+            path += @"\变体图";
+            Console.WriteLine(path);
+
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
+            int i = 0;
+            foreach (string item in spider.BiantiImageList)
+            {
+                i++;
+                string fileName = i + ".jpg";
+                HttpUtils.HttpDownloadFile(item, path + @"\" + fileName);
+            }
+
+            MessageBox.Show("下载完成！", "提示");
         }
     }
     

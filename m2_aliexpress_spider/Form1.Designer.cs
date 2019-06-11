@@ -58,6 +58,8 @@
             this.tbxTitle = new System.Windows.Forms.TextBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.btnClearUrl = new System.Windows.Forms.Button();
+            this.btnDownloadBTImg = new System.Windows.Forms.Button();
+            this.tbxBtImageCount = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.gbxProperty.SuspendLayout();
@@ -114,6 +116,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.tbxBtImageCount);
+            this.groupBox2.Controls.Add(this.btnDownloadBTImg);
             this.groupBox2.Controls.Add(this.listView1);
             this.groupBox2.Controls.Add(this.gbxProperty);
             this.groupBox2.Controls.Add(this.button1);
@@ -332,6 +336,23 @@
             this.btnClearUrl.UseVisualStyleBackColor = true;
             this.btnClearUrl.Click += new System.EventHandler(this.btnClearUrl_Click);
             // 
+            // btnDownloadBTImg
+            // 
+            this.btnDownloadBTImg.Location = new System.Drawing.Point(420, 112);
+            this.btnDownloadBTImg.Name = "btnDownloadBTImg";
+            this.btnDownloadBTImg.Size = new System.Drawing.Size(75, 23);
+            this.btnDownloadBTImg.TabIndex = 25;
+            this.btnDownloadBTImg.Text = "下载变体图";
+            this.btnDownloadBTImg.UseVisualStyleBackColor = true;
+            this.btnDownloadBTImg.Click += new System.EventHandler(this.btnDownloadBTImg_Click);
+            // 
+            // tbxBtImageCount
+            // 
+            this.tbxBtImageCount.Location = new System.Drawing.Point(330, 112);
+            this.tbxBtImageCount.Name = "tbxBtImageCount";
+            this.tbxBtImageCount.Size = new System.Drawing.Size(72, 21);
+            this.tbxBtImageCount.TabIndex = 26;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -383,6 +404,8 @@
         private System.Windows.Forms.Panel panelProperty;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button btnClearUrl;
+        private System.Windows.Forms.Button btnDownloadBTImg;
+        private System.Windows.Forms.TextBox tbxBtImageCount;
     }
 }
 

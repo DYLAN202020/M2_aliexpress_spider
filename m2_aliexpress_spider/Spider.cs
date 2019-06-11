@@ -38,6 +38,8 @@ namespace m2_aliexpress_spider
 
         public List<string> ContentImageList = new List<string>();
 
+        public List<string> BiantiImageList = new List<string>();
+
         // <propTypeName, valueList>
         public Dictionary<string, List<SkuPropertyValue>> PropertyDict = new Dictionary<string, List<SkuPropertyValue>>();
 
@@ -113,6 +115,14 @@ namespace m2_aliexpress_spider
                         if (imgNode != null)
                         {
                             skuPropertyValue.ImageUrl = imgNode.Attributes["src"].Value;
+                            // 变体图
+                            if (skuPropertyValue.ImageUrl != null && skuPropertyValue.ImageUrl.Length != 0)
+                            {
+                                //MainImageList.Add(skuProp.skuPropertyImagePath);
+                                string btImage = skuPropertyValue.ImageUrl.Replace("_50x50.jpg", "");
+                                BiantiImageList.Add(btImage);
+                                Console.WriteLine("----------------------skuPropertyValue.ImageUrl: " + btImage);
+                            }
                         }
 
                         HtmlNode spanNode = aNode.SelectSingleNode(".//span");
@@ -347,13 +357,17 @@ namespace m2_aliexpress_spider
                                 skuPropertyValue.Id = skuProp.propertyValueId.ToString();
                                 skuPropertyValue.Name = skuProp.propertyValueName;
                                 skuPropertyValue.ImageUrl = skuProp.skuPropertyImagePath;
+                                
 
-                                // 主图
-                                if (skuProp.skuPropertyImagePath != null && skuProp.skuPropertyImagePath.Count() > 0)
+                                // 变体图
+                                if (skuPropertyValue.ImageUrl != null && skuPropertyValue.ImageUrl.Length != 0)
                                 {
                                     //MainImageList.Add(skuProp.skuPropertyImagePath);
+                                    string btImage = skuPropertyValue.ImageUrl.Replace("_50x50.jpg", "");
+                                    BiantiImageList.Add(btImage);
+                                    Console.WriteLine("----------------------skuPropertyValue.ImageUrl: " + btImage);
                                 }
-                               
+
                                 skuPropertyValue.Prop = productProperty.skuPropertyName;
                                 list.Add(skuPropertyValue);
 
