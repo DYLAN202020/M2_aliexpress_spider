@@ -73,6 +73,14 @@ namespace m2_aliexpress_spider
             }
 
             tbxTitle.Text = spider.Title;
+
+            string invalid = new string(Path.GetInvalidFileNameChars()) + new string(Path.GetInvalidPathChars());
+
+            foreach (char c in invalid)
+            {
+                tbxTitle.Text = tbxTitle.Text.Replace(c.ToString(), "");
+            }
+            
             tbxPrice.Text = spider.Price;
             tbxCurrCode.Text = spider.CurrencyCode;
             tbxMainImageCount.Text = spider.MainImageList.Count.ToString();
