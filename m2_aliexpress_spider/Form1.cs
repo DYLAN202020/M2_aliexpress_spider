@@ -57,8 +57,21 @@ namespace m2_aliexpress_spider
             }
 
             spider = new Spider(tbxUrl.Text);
-            spider.LoadHtml();
-            spider.ParseHTML();
+            Console.WriteLine("--");
+            bool suc = spider.LoadHtml();
+            if (!suc)
+            {
+                return;
+            }
+            if (spider.isNL())
+            {
+
+                spider.ParseHTML4NL();
+            } else
+            {
+                spider.ParseHTML();
+            }
+
             tbxTitle.Text = spider.Title;
             tbxPrice.Text = spider.Price;
             tbxCurrCode.Text = spider.CurrencyCode;

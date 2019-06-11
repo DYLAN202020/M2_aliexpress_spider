@@ -77,6 +77,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="LoadResourceDll.cs" />
+    <Compile Include="NLParser.cs" />
     <Compile Include="ProductSku.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

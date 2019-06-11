@@ -38,12 +38,13 @@ namespace m2_aliexpress_spider
         
         public static string HttpGet(string url)
         {
+            Console.WriteLine("url: " + url);
             string result = null;
             HttpWebRequest wbRequest = (HttpWebRequest)WebRequest.Create(url);
             wbRequest.Method = "GET";
             wbRequest.Accept = "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3";
             wbRequest.UserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36";
-            wbRequest.Timeout = 2000;
+            wbRequest.Timeout = 3000;
             try
             {
                 HttpWebResponse wbResponse = (HttpWebResponse)wbRequest.GetResponse();
