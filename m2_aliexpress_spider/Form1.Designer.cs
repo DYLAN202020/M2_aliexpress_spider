@@ -57,6 +57,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tbxTitle = new System.Windows.Forms.TextBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.btnClearUrl = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.gbxProperty.SuspendLayout();
@@ -64,7 +65,7 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(724, 21);
+            this.btnStart.Location = new System.Drawing.Point(643, 20);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 0;
@@ -85,12 +86,13 @@
             // 
             this.tbxUrl.Location = new System.Drawing.Point(143, 23);
             this.tbxUrl.Name = "tbxUrl";
-            this.tbxUrl.Size = new System.Drawing.Size(575, 21);
+            this.tbxUrl.Size = new System.Drawing.Size(494, 21);
             this.tbxUrl.TabIndex = 2;
             this.tbxUrl.Text = resources.GetString("tbxUrl.Text");
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnClearUrl);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnStart);
             this.groupBox1.Controls.Add(this.tbxUrl);
@@ -320,6 +322,16 @@
             this.tbxTitle.Size = new System.Drawing.Size(710, 21);
             this.tbxTitle.TabIndex = 3;
             // 
+            // btnClearUrl
+            // 
+            this.btnClearUrl.Location = new System.Drawing.Point(724, 20);
+            this.btnClearUrl.Name = "btnClearUrl";
+            this.btnClearUrl.Size = new System.Drawing.Size(75, 23);
+            this.btnClearUrl.TabIndex = 3;
+            this.btnClearUrl.Text = "清空";
+            this.btnClearUrl.UseVisualStyleBackColor = true;
+            this.btnClearUrl.Click += new System.EventHandler(this.btnClearUrl_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -370,6 +382,7 @@
         private System.Windows.Forms.GroupBox gbxProperty;
         private System.Windows.Forms.Panel panelProperty;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button btnClearUrl;
     }
 }
 

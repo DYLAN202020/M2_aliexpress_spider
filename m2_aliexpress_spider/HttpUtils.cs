@@ -38,6 +38,10 @@ namespace m2_aliexpress_spider
         
         public static string HttpGet(string url)
         {
+            if (url == null || url.Length == 0)
+            {
+                return null;
+            }
             Console.WriteLine("url: " + url);
             string result = null;
             HttpWebRequest wbRequest = (HttpWebRequest)WebRequest.Create(url);

@@ -271,6 +271,11 @@ namespace m2_aliexpress_spider
             //}
 
         }
+
+        private void btnClearUrl_Click(object sender, EventArgs e)
+        {
+            tbxUrl.Text = "";
+        }
     }
     
 }
