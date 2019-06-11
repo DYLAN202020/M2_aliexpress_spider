@@ -317,15 +317,17 @@ namespace m2_aliexpress_spider
 
                     NLParser nLParser = JsonConvert.DeserializeObject<NLParser>(v);
 
+                    // 大主图
                     foreach (var imagePath in nLParser.data.imageModule.imagePathList)
                     {
                         MainImageList.Add(imagePath);
                     }
 
-                    foreach (var imagePath in nLParser.data.imageModule.summImagePathList)
-                    {
-                        MainImageList.Add(imagePath);
-                    }
+                    // 下载小图
+                    //foreach (var imagePath in nLParser.data.imageModule.summImagePathList)
+                    //{
+                    //    MainImageList.Add(imagePath);
+                    //}
 
                     Skumodule skuModule = nLParser.data.skuModule;
                     // 处理属性
