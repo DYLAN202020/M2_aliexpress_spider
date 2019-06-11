@@ -316,6 +316,17 @@ namespace m2_aliexpress_spider
                     Console.WriteLine(v);
 
                     NLParser nLParser = JsonConvert.DeserializeObject<NLParser>(v);
+
+                    foreach (var imagePath in nLParser.data.imageModule.imagePathList)
+                    {
+                        MainImageList.Add(imagePath);
+                    }
+
+                    foreach (var imagePath in nLParser.data.imageModule.summImagePathList)
+                    {
+                        MainImageList.Add(imagePath);
+                    }
+
                     Skumodule skuModule = nLParser.data.skuModule;
                     // 处理属性
                     if (skuModule.hasSkuProperty)
@@ -338,7 +349,7 @@ namespace m2_aliexpress_spider
                                 // 主图
                                 if (skuProp.skuPropertyImagePath != null && skuProp.skuPropertyImagePath.Count() > 0)
                                 {
-                                    MainImageList.Add(skuProp.skuPropertyImagePath);
+                                    //MainImageList.Add(skuProp.skuPropertyImagePath);
                                 }
                                
                                 skuPropertyValue.Prop = productProperty.skuPropertyName;
